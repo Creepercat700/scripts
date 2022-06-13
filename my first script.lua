@@ -22,7 +22,7 @@ lable.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 lable.Position = UDim2.new(0, 0, -0.00426775217, 0)
 lable.Size = UDim2.new(0, 285, 0, 50)
 lable.Font = Enum.Font.Cartoon
-lable.Text = "Speed and Jump Hack | Created by Scout Weiler"
+lable.Text = "Speed and Jump Hack | Created by Creepercat700"
 lable.TextColor3 = Color3.fromRGB(0, 0, 0)
 lable.TextSize = 12.000
 
