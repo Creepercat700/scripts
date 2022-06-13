@@ -1,0 +1,61 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local lable = Instance.new("TextLabel")
+local speed200 = Instance.new("TextButton")
+local speed16 = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+main.Position = UDim2.new(0.638783276, 0, 0.681908488, 0)
+main.Size = UDim2.new(0, 285, 0, 160)
+main.Active = true
+main.Draggable = true
+
+lable.Name = "lable"
+lable.Parent = main
+lable.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+lable.Position = UDim2.new(0, 0, -0.00426775217, 0)
+lable.Size = UDim2.new(0, 285, 0, 50)
+lable.Font = Enum.Font.Cartoon
+lable.Text = "Speed and Jump Hack | Created by Creepercat700"
+lable.TextColor3 = Color3.fromRGB(0, 0, 0)
+lable.TextSize = 12.000
+
+speed200.Name = "speed200"
+speed200.Parent = main
+speed200.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+speed200.Position = UDim2.new(0, 0, 0.679487169, 0)
+speed200.Size = UDim2.new(0, 147, 0, 50)
+speed200.Font = Enum.Font.SourceSans
+speed200.Text = "Speed: 200 and jump 250"
+speed200.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed200.TextSize = 13.000
+speed200.MouseButton1Down:connect(function()
+	Player = "LocalPlayer"
+	game.Players[Player].Character.Humanoid.WalkSpeed = 200
+	Player = "LocalPlayer"
+	Game.Players[Player].Character.Humanoid.JumpPower = 250
+    print ("Speed and Jump Set")
+end)
+
+speed16.Name = "speed16"
+speed16.Parent = main
+speed16.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+speed16.Position = UDim2.new(0.515789449, 0, 0.679487169, 0)
+speed16.Size = UDim2.new(0, 138, 0, 50)
+speed16.Font = Enum.Font.SourceSans
+speed16.Text = "Speed 16 and jump 50"
+speed16.TextColor3 = Color3.fromRGB(0, 0, 0)
+speed16.TextSize = 13.000
+speed16.MouseButton1Down:connect(function()
+    Player = "LocalPlayer"
+    game.Players[Player].Character.Humanoid.WalkSpeed = 16
+	Player = "LocalPlayer"
+	Game.Players[Player].Character.Humanoid.JumpPower = 50
+    print ("Speed and Jump Set")
+end)
