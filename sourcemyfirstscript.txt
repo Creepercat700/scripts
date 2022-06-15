@@ -40,6 +40,7 @@ speed200.MouseButton1Down:connect(function()
 	game.Players[Player].Character.Humanoid.WalkSpeed = 200
 	Player = "LocalPlayer"
 	Game.Players[Player].Character.Humanoid.JumpPower = 250
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     print ("Speed and Jump Set")
 end)
 
@@ -57,5 +58,6 @@ speed16.MouseButton1Down:connect(function()
     game.Players[Player].Character.Humanoid.WalkSpeed = 16
 	Player = "LocalPlayer"
 	Game.Players[Player].Character.Humanoid.JumpPower = 50
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     print ("Speed and Jump Set")
 end)
